@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Alexandre Brito | Desenvolvedor Front-end</title>
+  <meta name="description" content="Portfólio de Alexandre Brito — Desenvolvedor Front-end em formação (HTML, CSS, JavaScript)." />
+  <meta name="author" content="Alexandre Brito" />
+  <meta name="keywords" content="Front-end, HTML, CSS, JavaScript, Portfólio, Desenvolvedor Front-end" />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <header class="header">
+    <nav class="nav">
+      <a class="logo" href="#inicio" aria-label="Voltar ao início">AB</a>
+
+      <button class="menu-btn" id="menuBtn" type="button" aria-label="Abrir menu" aria-expanded="false" aria-controls="navLinks">
+        <span class="menu-line"></span>
+        <span class="menu-line"></span>
+        <span class="menu-line"></span>
+      </button>
+
+      <div class="nav-links" id="navLinks">
+        <a href="#sobre">Sobre</a>
+        <a href="#skills">Skills</a>
+        <a href="#projetos">Projetos</a>
+        <a href="#contato" class="btn btn-small">Contato</a>
+      </div>
+    </nav>
+
+    <section id="inicio" class="hero">
+      <div class="hero-left">
+        <p class="badge">Front-end • HTML • CSS • JavaScript</p>
+        <h1>Alexandre Brito</h1>
+        <p class="subtitle">
+          Desenvolvedor Front-end em formação. Construo interfaces modernas, responsivas e organizadas.
+        </p>
+
+        <div class="hero-cta">
+          <a class="btn" href="#projetos">Ver projetos</a>
+          <a class="btn btn-outline" href="#contato">Falar comigo</a>
+        </div>
+
+        <div class="stats" aria-label="Estatísticas rápidas">
+          <div class="stat">
+            <p class="stat-number">3</p>
+            <p class="stat-label">Tecnologias base</p>
+          </div>
+          <div class="stat">
+            <p class="stat-number">7</p>
+            <p class="stat-label">Certificados</p>
+          </div>
+          <div class="stat">
+            <p class="stat-number">2026</p>
+            <p class="stat-label">Foco total</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-right">
+        <div class="card profile-card">
+          <div class="avatar" aria-hidden="true">A</div>
+          <div>
+            <p class="profile-name">Alexandre Brito</p>
+            <p class="profile-role">Front-end Developer</p>
+            <p class="profile-loc">Minas Gerais, Brasil</p>
+          </div>
+        </div>
+
+        <div class="card highlight">
+          <p class="highlight-title">Em busca da primeira oportunidade</p>
+          <p class="highlight-text">
+            Estudante de ADS. Evoluindo com projetos e boas práticas (Clean Code).
+          </p>
+        </div>
+      </div>
+    </section>
+  </header>
+
+  <main class="main">
+    <section id="sobre" class="section">
+      <h2>Sobre</h2>
+      <p class="lead">
+        Sou estudante de Análise e Desenvolvimento de Sistemas e apaixonado por tecnologia e desenvolvimento web.
+        Atualmente estou focado em me tornar um desenvolvedor Front-end sólido, estudando HTML, CSS e JavaScript e
+        desenvolvendo projetos para evoluir constantemente.
+      </p>
+
+      <div class="grid-2">
+        <div class="card">
+          <h3>O que eu curto construir</h3>
+          <ul class="list">
+            <li>Interfaces modernas e responsivas</li>
+            <li>Layouts organizados e fáceis de manter</li>
+            <li>Experiências simples e diretas</li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <h3>Agora estou estudando</h3>
+          <ul class="list">
+            <li>HTML,CSS e JS</li>
+            <li>APIs</li>
+            <li>Boas práticas e Clean Code</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills" class="section">
+      <h2>Skills</h2>
+
+      <div class="skills" role="list">
+        <button class="chip" type="button" data-skill="HTML">HTML</button>
+        <button class="chip" type="button" data-skill="CSS">CSS</button>
+        <button class="chip" type="button" data-skill="JavaScript">JavaScript</button>
+        <button class="chip" type="button" data-skill="Git/GitHub">Git/GitHub</button>
+        <button class="chip" type="button" data-skill="Responsivo">Responsivo</button>
+      </div>
+
+      <div class="card info" id="skillInfo" aria-live="polite">
+        Clique em uma skill para ver um destaque aqui.
+      </div>
+    </section>
+
+    <section id="projetos" class="section">
+      <h2>Projetos</h2>
+      <p class="muted">Comece com 1 projeto. Depois você vai adicionando mais cards aqui.</p>
+
+      <div class="projects">
+        <article class="card project">
+          <div class="project-thumb">
+            <img src="assets/portfolio.png" alt="Prévia do projeto Portfólio pessoal" loading="lazy">
+          </div>
+          <div class="project-top">
+            <p class="project-title">Portfólio pessoal</p>
+            <p class="project-tags">HTML • CSS • JS</p>
+          </div>
+          <p class="project-desc">
+            Página pessoal com seções, layout responsivo e interações simples. Ideal para apresentar evolução.
+          </p>
+          <div class="project-actions">
+            <a class="btn btn-small" href="#" aria-disabled="true">Demo</a>
+            <a class="btn btn-outline btn-small" href="#" aria-disabled="true">Código</a>
+          </div>
+          <p class="hint">https://github.com/AlexandreBrito26/meu-portfolio.git</p>
+        </article>
+
+        <article class="card project ghost">
+          <p class="project-title">Próximo projeto</p>
+          <p class="project-desc">Calculadora JS • To-do list • Landing page…</p>
+          <p class="hint">Assim que finalizar, copie este card e edite.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="contato" class="section">
+      <h2>Contato</h2>
+
+      <div class="grid-2">
+        <div class="card">
+          <h3>Vamos conversar</h3>
+          <p class="muted">Deixe seus links e um email profissional.</p>
+
+          <div class="contact">
+            <p><strong>Email:</strong> <span id="email">alexandrebritoprofissional@gmail.com</span></p>
+            <p><strong>LinkedIn:</strong> <a href="#" id="linkedinLink" target="_blank" rel="noopener noreferrer">https://www.linkedin.com/in/alexandre-brito-b6a7071b2/</a></p>
+            <p><strong>GitHub:</strong> <a href="#" id="githubLink" target="_blank" rel="noopener noreferrer">https://github.com/AlexandreBrito26</a></p>
+          </div>
+
+          <button class="btn btn-outline btn-small" id="copyEmail" type="button">
+            Copiar email
+          </button>
+
+          <p class="toast" id="toast" role="status" aria-live="polite"></p>
+        </div>
+
+        <form class="card form" id="form">
+          <h3>Mensagem rápida (simulação)</h3>
+
+          <label>
+            Seu nome
+            <input type="text" name="nome" placeholder="Ex: Maria" required />
+          </label>
+
+          <label>
+            Mensagem
+            <textarea name="msg" rows="4" placeholder="Ex: Vi seu portfólio e..." required></textarea>
+          </label>
+
+          <button class="btn" type="submit">Enviar</button>
+          <p class="hint">*Aqui é só simulação para treinar formulário.</p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>© <span id="year"></span> Alexandre Brito • Feito com HTML/CSS/JS</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
