@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Alexandre Brito | Desenvolvedor Front-end</title>
+  <meta name="description" content="Portfólio de Alexandre Brito — Desenvolvedor Front-end em formação." />
+  <meta name="author" content="Alexandre Brito" />
+  <meta name="keywords" content="Front-end, HTML, CSS, JavaScript, Portfólio, Desenvolvedor" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <!-- Noise texture overlay -->
+  <div class="noise" aria-hidden="true"></div>
+  <!-- Floating orbs -->
+  <div class="orb orb-1" aria-hidden="true"></div>
+  <div class="orb orb-2" aria-hidden="true"></div>
+  <div class="orb orb-3" aria-hidden="true"></div>
+
+  <header class="header">
+    <nav class="nav">
+      <a class="logo" href="#inicio" aria-label="Voltar ao início">
+        <span class="logo-ab">AB</span>
+        <span class="logo-dot"></span>
+      </a>
+
+      <button class="menu-btn" id="menuBtn" type="button" aria-label="Abrir menu" aria-expanded="false" aria-controls="navLinks">
+        <span class="menu-line"></span>
+        <span class="menu-line"></span>
+        <span class="menu-line"></span>
+      </button>
+
+      <div class="nav-links" id="navLinks">
+        <a href="#sobre">Sobre</a>
+        <a href="#skills">Skills</a>
+        <a href="#projetos">Projetos</a>
+        <a href="#contato" class="btn btn-small">Contato</a>
+      </div>
+    </nav>
+
+    <section id="inicio" class="hero">
+      <div class="hero-left">
+        <p class="badge">
+          <span class="badge-dot"></span>
+          Disponível para oportunidades
+        </p>
+        <h1>Alexandre<br><span class="h1-accent">Brito</span></h1>
+        <p class="subtitle">
+          Desenvolvedor Front-end em formação. Construo interfaces modernas, responsivas e organizadas.
+        </p>
+
+        <div class="hero-cta">
+          <a class="btn" href="#projetos">
+            <svg width="16" height="16" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            Ver projetos
+          </a>
+          <a class="btn btn-outline" href="#contato">Falar comigo</a>
+        </div>
+
+        <div class="stats" aria-label="Estatísticas rápidas">
+          <div class="stat">
+            <p class="stat-number">18<span class="stat-plus">+</span></p>
+            <p class="stat-label">Projetos</p>
+          </div>
+          <div class="stat">
+            <p class="stat-number">7</p>
+            <p class="stat-label">Certificados</p>
+          </div>
+          <div class="stat">
+            <p class="stat-number">2026</p>
+            <p class="stat-label">Foco total</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-right">
+        <div class="card profile-card">
+          <div class="avatar" aria-hidden="true">A</div>
+          <div>
+            <p class="profile-name">Alexandre Brito</p>
+            <p class="profile-role">Front-end Developer</p>
+            <p class="profile-loc">
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              Minas Gerais, Brasil
+            </p>
+          </div>
+        </div>
+
+        <div class="card highlight">
+          <p class="highlight-title">Em busca da primeira oportunidade</p>
+          <p class="highlight-text">
+            Estudante de ADS. Evoluindo com projetos e boas práticas (Clean Code).
+          </p>
+        </div>
+
+        <div class="tech-strip">
+          <span>HTML</span><span class="sep">·</span>
+          <span>CSS</span><span class="sep">·</span>
+          <span>JavaScript</span><span class="sep">·</span>
+          <span>Git</span>
+        </div>
+      </div>
+    </section>
+  </header>
+
+  <main class="main">
+    <section id="sobre" class="section">
+      <div class="section-label">01 — Sobre</div>
+      <h2>Quem sou</h2>
+      <p class="lead">
+        Sou estudante de Análise e Desenvolvimento de Sistemas e apaixonado por tecnologia e desenvolvimento web.
+        Atualmente estou focado em me tornar um desenvolvedor Front-end sólido, estudando HTML, CSS e JavaScript e
+        desenvolvendo projetos para evoluir constantemente.
+      </p>
+
+      <div class="grid-2">
+        <div class="card">
+          <div class="card-icon">🎯</div>
+          <h3>O que eu curto construir</h3>
+          <ul class="list">
+            <li>Interfaces modernas e responsivas</li>
+            <li>Layouts organizados e fáceis de manter</li>
+            <li>Experiências simples e diretas</li>
+            <li>Jogos e projetos interativos no browser</li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <div class="card-icon">📚</div>
+          <h3>Agora estou estudando</h3>
+          <ul class="list">
+            <li>HTML, CSS e JS</li>
+            <li>APIs e consumo de dados</li>
+            <li>Boas práticas e Clean Code</li>
+            <li>React (próximo objetivo)</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills" class="section">
+      <div class="section-label">02 — Habilidades</div>
+      <h2>Skills</h2>
+
+      <div class="skills" role="list">
+        <button class="chip" type="button" data-skill="HTML">HTML</button>
+        <button class="chip" type="button" data-skill="CSS">CSS</button>
+        <button class="chip" type="button" data-skill="JavaScript">JavaScript</button>
+        <button class="chip" type="button" data-skill="Git/GitHub">Git/GitHub</button>
+        <button class="chip" type="button" data-skill="Responsivo">Responsivo</button>
+      </div>
+
+      <div class="card info" id="skillInfo" aria-live="polite">
+        Clique em uma skill para ver um destaque aqui.
+      </div>
+    </section>
+
+    <section id="projetos" class="section">
+      <div class="section-label">03 — Trabalhos</div>
+      <h2>Projetos</h2>
+      <p class="muted">Meus projetos mais recentes focados em Front-end.</p>
+
+      <div class="project-filters" id="projectFilters">
+        <button class="filter-btn active" data-filter="Todos">Todos <span class="count" id="count-Todos">0</span></button>
+        <button class="filter-btn" data-filter="HTML">HTML <span class="count" id="count-HTML">0</span></button>
+        <button class="filter-btn" data-filter="CSS">CSS <span class="count" id="count-CSS">0</span></button>
+        <button class="filter-btn" data-filter="JS">JS <span class="count" id="count-JS">0</span></button>
+        <button class="filter-btn" data-filter="TypeScript">TypeScript <span class="count" id="count-TypeScript">0</span></button>
+        <button class="filter-btn" data-filter="React Native">React Native <span class="count" id="count-React Native">0</span></button>
+      </div>
+
+      <div class="projects">
+
+        <!-- DESTAQUE: One Night in the Code's -->
+        <article class="card project project-featured" data-tags="HTML CSS JS">
+          <div class="featured-badge">⭐ Destaque</div>
+          <div class="project-thumb">
+            <div class="project-thumb-placeholder fnaf-thumb">
+              <div class="fnaf-bg">
+                <div class="fnaf-eye fnaf-eye-1"></div>
+                <div class="fnaf-eye fnaf-eye-2"></div>
+                <div class="fnaf-scanlines"></div>
+                <span class="fnaf-label">ONE NIGHT IN THE CODE'S</span>
+              </div>
+            </div>
+          </div>
+          <div class="project-top">
+            <p class="project-title">One Night in the Code's</p>
+            <p class="project-tags">HTML • CSS • JS</p>
+          </div>
+          <p class="project-desc">
+            Jogo de horror inspirado no FNAF, construído em um único arquivo HTML. Sobreviva às entidades da madrugada gerenciando recursos e tomando decisões rápidas.
+          </p>
+          <div class="project-actions">
+            <a class="btn btn-small" href="https://one-night-in-the-code.vercel.app/" target="_blank" rel="noopener noreferrer">
+              <svg width="13" height="13" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+              Jogar
+            </a>
+            <a class="btn btn-outline btn-small" href="https://github.com/AlexandreBrito26" target="_blank" rel="noopener noreferrer">Código</a>
+          </div>
+        </article>
+
+        <!-- DESTAQUE: Perk Lab DBD -->
+        <article class="card project project-featured" data-tags="HTML CSS JS">
+          <div class="featured-badge">⭐ Destaque</div>
+          <div class="project-thumb">
+            <div class="project-thumb-placeholder dbd-thumb">
+              <div class="dbd-bg">
+                <div class="dbd-hook"></div>
+                <div class="dbd-scanlines"></div>
+                <span class="dbd-label">PERK LAB — DBD</span>
+              </div>
+            </div>
+          </div>
+          <div class="project-top">
+            <p class="project-title">Perk Lab — DBD Build Maker</p>
+            <p class="project-tags">HTML • CSS • JS</p>
+          </div>
+          <p class="project-desc">
+            Ferramenta de criação de builds para Dead by Daylight. Monte e compartilhe combinações de perks para sobreviventes e assassinos com interface temática do game.
+          </p>
+          <div class="project-actions">
+            <a class="btn btn-small" href="https://perk-lab-dbd.vercel.app/" target="_blank" rel="noopener noreferrer">
+              <svg width="13" height="13" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+              Acessar
+            </a>
+            <a class="btn btn-outline btn-small" href="https://github.com/AlexandreBrito26" target="_blank" rel="noopener noreferrer">Código</a>
+          </div>
+        </article>
+
+        <!-- Portfolio pessoal -->
+        <article class="card project" data-tags="HTML CSS JS">
+          <div class="project-thumb">
+            <div class="project-thumb-placeholder portfolio-thumb"><div class="portfolio-bg"><div class="portfolio-bar"></div><div class="portfolio-bar"></div><div class="portfolio-bar"></div><div class="portfolio-avatar">AB</div><div class="portfolio-label">PORTFÓLIO</div></div></div>
+          </div>
+          <div class="project-top">
+            <p class="project-title">Portfólio pessoal</p>
+            <p class="project-tags">HTML • CSS • JS</p>
+          </div>
+          <p class="project-desc">
+            Página pessoal com seções, layout responsivo e interações simples. Ideal para apresentar evolução.
+          </p>
+          <div class="project-actions">
+            <a class="btn btn-small" href="#" aria-disabled="true">Demo</a>
+            <a class="btn btn-outline btn-small" href="https://github.com/AlexandreBrito26/meu-portfolio.git" target="_blank" rel="noopener noreferrer">Código</a>
+          </div>
+        </article>
+
+        <!-- CalcQuest RPG -->
+        <article class="card project" data-tags="HTML CSS JS">
+          <div class="project-thumb">
+            <div class="project-thumb-placeholder cq-thumb"><div class="cq-bg"><div class="cq-sword">⚔</div><div class="cq-title">CALCQUEST</div><div class="cq-sub">Lendas de Algoritma</div></div></div>
+          </div>
+          <div class="project-top">
+            <p class="project-title">CalcQuest RPG</p>
+            <p class="project-tags">HTML • CSS • JS</p>
+          </div>
+          <p class="project-desc">
+            Um jogo RPG interativo e dinâmico onde o jogador resolve desafios matemáticos para avançar na aventura.
+          </p>
+          <div class="project-actions">
+            <a class="btn btn-small" href="https://calc-quest-rpg-lendas-de-algoritma.vercel.app/" target="_blank" rel="noopener noreferrer">Demo</a>
+            <a class="btn btn-outline btn-small" href="https://github.com/AlexandreBrito26/CalcQuest-RPG-Lendas-de-Algoritma" target="_blank" rel="noopener noreferrer">Código</a>
+          </div>
+        </article>
+
+        <!-- CalcQuest Website -->
+        <article class="card project" data-tags="HTML CSS JS">
+          <div class="project-thumb">
+            <div class="project-thumb-placeholder cqsite-thumb"><div class="cqsite-bg"><div class="cqsite-title">RECUPERE A</div><div class="cqsite-accent">MATRIZ LÓGICA</div><div class="cqsite-label">LANDING PAGE</div></div></div>
+          </div>
+          <div class="project-top">
+            <p class="project-title">CalcQuest Website</p>
+            <p class="project-tags">HTML • CSS • JS</p>
+          </div>
+          <p class="project-desc">
+            Landing page responsiva e temática desenvolvida para apresentar e promover o jogo CalcQuest.
+          </p>
+          <div class="project-actions">
+            <a class="btn btn-small" href="https://calc-quest-website.vercel.app/" target="_blank" rel="noopener noreferrer">Demo</a>
+            <a class="btn btn-outline btn-small" href="https://github.com/AlexandreBrito26/CalcQuest_Website" target="_blank" rel="noopener noreferrer">Código</a>
+          </div>
+        </article>
+
+        <!-- Controle de Gastos -->
+        <article class="card project" data-tags="HTML CSS JS">
+          <div class="project-thumb">
+            <div class="project-thumb-placeholder gastos-thumb"><div class="gastos-bg"><div class="gastos-card"><div class="gastos-row"><span>💰 Saldo</span><span class="gastos-val">R$ 1.950</span></div><div class="gastos-row"><span>🍽 Gastos</span><span class="gastos-neg">- R$ 420</span></div><div class="gastos-divider"></div><div class="gastos-row gastos-total"><span>Disponível</span><span>R$ 1.530</span></div></div></div></div>
+          </div>
+          <div class="project-top">
+            <p class="project-title">Controle de Gastos (Vale Card)</p>
+            <p class="project-tags">HTML • CSS • JS</p>
+          </div>
+          <p class="project-desc">
+            Sistema prático desenvolvido em JavaScript para ajudar na gestão e no acompanhamento de despesas.
+          </p>
+          <div class="project-actions">
+            <a class="btn btn-small" href="https://controle-de-gastos-com-vale-card.vercel.app/" target="_blank">Demo</a>
+            <a class="btn btn-outline btn-small" href="https://github.com/AlexandreBrito26/Controle_de_Gastos_com_Vale_Card" target="_blank" rel="noopener noreferrer">Código</a>
+          </div>
+        </article>
+
+        <!-- Landing Page Netflix -->
+        <article class="card project" data-tags="HTML CSS">
+          <div class="project-thumb">
+            <div class="project-thumb-placeholder netflix-thumb"><div class="netflix-bg"><div class="netflix-logo">NETFLIX</div><div class="netflix-tag">FILMES, SÉRIES E</div><div class="netflix-tag2">MUITO MAIS.</div></div></div>
+          </div>
+          <div class="project-top">
+            <p class="project-title">Landing Page Netflix</p>
+            <p class="project-tags">HTML • CSS</p>
+          </div>
+          <p class="project-desc">
+            Clone da interface da página inicial da Netflix. Projeto focado na estruturação e estilização avançada com CSS.
+          </p>
+          <div class="project-actions">
+            <a class="btn btn-small" href="https://landing-page-netflix-zeta.vercel.app/" target="_blank">Demo</a>
+            <a class="btn btn-outline btn-small" href="https://github.com/AlexandreBrito26/LandingPageNetflix" target="_blank" rel="noopener noreferrer">Código</a>
+          </div>
+        </article>
+
+        <!-- CalcQuest 2 -->
+        <article class="card project" data-tags="HTML CSS JS">
+          <div class="project-thumb">
+            <div class="project-thumb-placeholder cq2-thumb"><div class="cq2-bg"><div class="cq2-star">★</div><div class="cq2-title">CALCQUEST II</div><div class="cq2-sub">A Saga dos Números</div></div></div>
+          </div>
+          <div class="project-top">
+            <p class="project-title">CalcQuest 2</p>
+            <p class="project-tags">HTML • CSS • JS</p>
+          </div>
+          <p class="project-desc">
+            Segunda iteração do universo CalcQuest, explorando novas lógicas, mecânicas e melhorias na estrutura.
+          </p>
+          <div class="project-actions">
+            <a class="btn btn-small" href="https://calc-quest2.vercel.app/" target="_blank">Demo</a>
+            <a class="btn btn-outline btn-small" href="https://github.com/AlexandreBrito26/CalcQuest2" target="_blank" rel="noopener noreferrer">Código</a>
+          </div>
+        </article>
+
+        <!-- CalcPro -->
+        <article class="card project" data-tags="HTML CSS JS">
+          <div class="project-thumb">
+            <div class="project-thumb-placeholder calcpro-thumb"><div class="calcpro-bg"><div class="calcpro-screen">0</div><div class="calcpro-btns"><span>7</span><span>8</span><span>9</span><span class="op">÷</span><span>4</span><span>5</span><span>6</span><span class="op">×</span><span>1</span><span>2</span><span>3</span><span class="op">−</span><span>0</span><span>.</span><span>=</span><span class="op">+</span></div><div class="calcpro-label">CALCPRO</div></div></div>
+          </div>
+          <div class="project-top">
+            <p class="project-title">CalcPro</p>
+            <p class="project-tags">HTML • CSS • JS</p>
+          </div>
+          <p class="project-desc">
+            Aplicativo de calculadora estruturado para praticar manipulação de DOM e design moderno.
+          </p>
+          <div class="project-actions">
+            <a class="btn btn-small" href="https://calc-pro-bay.vercel.app/" target="_blank">Demo</a>
+            <a class="btn btn-outline btn-small" href="https://github.com/AlexandreBrito26/CalcPro-" target="_blank" rel="noopener noreferrer">Código</a>
+          </div>
+        </article>
+
+        <!-- TaleGrid -->
+        <article class="card project" data-tags="HTML CSS JS">
+          <div class="project-thumb">
+            <div class="project-thumb-placeholder talegrid-thumb"><div class="talegrid-bg"><div class="talegrid-grid"></div><div class="talegrid-book">📖</div><div class="talegrid-title">TALEGRID</div><div class="talegrid-sub">HISTÓRIAS & RPG</div></div></div>
+          </div>
+          <div class="project-top">
+            <p class="project-title">TaleGrid</p>
+            <p class="project-tags">HTML • CSS • JS</p>
+          </div>
+          <p class="project-desc">
+            Plataforma para criação e organização de histórias de RPG e fantasia, com interface temática e navegação por capítulos.
+          </p>
+          <div class="project-actions">
+            <a class="btn btn-small" href="https://tale-grid.vercel.app/" target="_blank" rel="noopener noreferrer">Demo</a>
+            <a class="btn btn-outline btn-small" href="https://github.com/AlexandreBrito26" target="_blank" rel="noopener noreferrer">Código</a>
+          </div>
+        </article>
+
+        <!-- O Curador de Sonhos -->
+        <article class="card project" data-tags="HTML CSS JS">
+          <div class="project-thumb">
+            <div class="project-thumb-placeholder curador-thumb"><div class="curador-bg"><div class="curador-fog"></div><div class="curador-eye">👁️</div><div class="curador-scanlines"></div><div class="curador-title">O CURADOR DE SONHOS</div><div class="curador-sub">LENDAS DE ALGORITMA</div></div></div>
+          </div>
+          <div class="project-top">
+            <p class="project-title">O Curador de Sonhos</p>
+            <p class="project-tags">HTML • CSS • JS</p>
+          </div>
+          <p class="project-desc">
+            Jogo de terror psicológico em atos, ambientado em cenários bizarros onde a sanidade do jogador é o recurso mais valioso. Parte do universo Lendas de Algoritma.
+          </p>
+          <div class="project-actions">
+            <a class="btn btn-small" href="https://o-curador-de-sonhos-lendas-de-algor.vercel.app/" target="_blank" rel="noopener noreferrer">Jogar</a>
+            <a class="btn btn-outline btn-small" href="https://github.com/AlexandreBrito26" target="_blank" rel="noopener noreferrer">Código</a>
+          </div>
+        </article>
+
+        <!-- Capivara GO -->
+        <article class="card project" data-tags="HTML CSS JS">
+          <div class="project-thumb">
+            <div class="project-thumb-placeholder capivara-thumb"><div class="capivara-bg"><div class="capivara-leaves"></div><div class="capivara-icon">🦫</div><div class="capivara-title">ÚLTIMOS DA FLORESTA</div><div class="capivara-sub">CAP. GO</div></div></div>
+          </div>
+          <div class="project-top">
+            <p class="project-title">Últimos da Floresta (Cap. GO)</p>
+            <p class="project-tags">HTML • CSS • JS</p>
+          </div>
+          <p class="project-desc">
+            Jogo estilo survivors ambientado na floresta brasileira. Sobreviva a ondas de inimigos controlando uma capivara.
+          </p>
+          <div class="project-actions">
+            <a class="btn btn-small" href="https://capivarago.vercel.app/" target="_blank" rel="noopener noreferrer">Jogar</a>
+            <a class="btn btn-outline btn-small" href="https://github.com/AlexandreBrito26" target="_blank" rel="noopener noreferrer">Código</a>
+          </div>
+        </article>
+
+        <!-- Aether Tides -->
+        <article class="card project" data-tags="HTML CSS JS">
+          <div class="project-thumb">
+            <div class="project-thumb-placeholder aether-thumb"><div class="aether-bg"><div class="aether-waves"></div><div class="aether-icon">🌊</div><div class="aether-title">AETHER TIDES</div><div class="aether-sub">TURN-BASED RPG</div></div></div>
+          </div>
+          <div class="project-top">
+            <p class="project-title">Aether Tides</p>
+            <p class="project-tags">HTML • CSS • JS</p>
+          </div>
+          <p class="project-desc">
+            RPG por turnos ambientado em um universo místico de marés e energia etérea, com sistema de combate estratégico.
+          </p>
+          <div class="project-actions">
+            <a class="btn btn-small" href="https://aether-tides.vercel.app/" target="_blank" rel="noopener noreferrer">Jogar</a>
+            <a class="btn btn-outline btn-small" href="https://github.com/AlexandreBrito26" target="_blank" rel="noopener noreferrer">Código</a>
+          </div>
+        </article>
+
+        <!-- Valley: Developer Edition -->
+        <article class="card project" data-tags="HTML CSS JS">
+          <div class="project-thumb">
+            <div class="project-thumb-placeholder valley-thumb"><div class="valley-bg"><div class="valley-mountains"></div><div class="valley-icon">⛰️</div><div class="valley-title">VALLEY</div><div class="valley-sub">DEVELOPER EDITION</div></div></div>
+          </div>
+          <div class="project-top">
+            <p class="project-title">Valley — Developer Edition</p>
+            <p class="project-tags">HTML • CSS • JS</p>
+          </div>
+          <p class="project-desc">
+            Projeto experimental explorando exploração e progressão em um cenário de vale, com foco em lógica de jogo e organização de código.
+          </p>
+          <div class="project-actions">
+            <a class="btn btn-small" href="https://valley-developer-edition.vercel.app/" target="_blank" rel="noopener noreferrer">Demo</a>
+            <a class="btn btn-outline btn-small" href="https://github.com/AlexandreBrito26" target="_blank" rel="noopener noreferrer">Código</a>
+          </div>
+        </article>
+
+        <!-- Aura Cármica -->
+        <article class="card project" data-tags="HTML CSS JS">
+          <div class="project-thumb">
+            <div class="project-thumb-placeholder aura-thumb"><div class="aura-bg"><div class="aura-ring"></div><div class="aura-icon">🔮</div><div class="aura-title">AURA CÁRMICA</div><div class="aura-sub">O DESPERTAR</div></div></div>
+          </div>
+          <div class="project-top">
+            <p class="project-title">Aura Cármica: O Despertar</p>
+            <p class="project-tags">HTML • CSS • JS</p>
+          </div>
+          <p class="project-desc">
+            RPG 2D em formato de visual novel com narrativa guiada por IA, explorando escolhas e consequências dentro de uma jornada espiritual.
+          </p>
+          <div class="project-actions">
+            <a class="btn btn-small" href="https://gdd-forge.vercel.app/" target="_blank" rel="noopener noreferrer">Jogar</a>
+            <a class="btn btn-outline btn-small" href="https://github.com/AlexandreBrito26" target="_blank" rel="noopener noreferrer">Código</a>
+          </div>
+        </article>
+
+        <!-- FinBalance -->
+        <article class="card project" data-tags="HTML CSS JS">
+          <div class="project-thumb">
+            <div class="project-thumb-placeholder finbalance-thumb"><div class="finbalance-bg"><div class="finbalance-chart"><div class="finbalance-bar"></div><div class="finbalance-bar"></div><div class="finbalance-bar"></div><div class="finbalance-bar"></div><div class="finbalance-bar"></div></div><div class="finbalance-title">FINBALANCE</div><div class="finbalance-label">INTELIGÊNCIA FINANCEIRA B2B</div></div></div>
+          </div>
+          <div class="project-top">
+            <p class="project-title">FinBalance</p>
+            <p class="project-tags">HTML • CSS • JS</p>
+          </div>
+          <p class="project-desc">
+            Dashboard B2B de inteligência financeira com análise de margem por produto e cliente, insights gerados por IA e exportação de relatórios.
+          </p>
+          <div class="project-actions">
+            <a class="btn btn-small" href="https://fin-balance-seven.vercel.app/" target="_blank" rel="noopener noreferrer">Demo</a>
+            <a class="btn btn-outline btn-small" href="https://github.com/AlexandreBrito26" target="_blank" rel="noopener noreferrer">Código</a>
+          </div>
+        </article>
+
+        <!-- PlotForge -->
+        <article class="card project" data-tags="HTML CSS JS">
+          <div class="project-thumb">
+            <div class="project-thumb-placeholder plotforge-thumb"><div class="plotforge-bg"><div class="plotforge-sparks"></div><div class="plotforge-icon">🔥</div><div class="plotforge-title">PLOTFORGE</div><div class="plotforge-sub">GAME DESIGN DOCS</div></div></div>
+          </div>
+          <div class="project-top">
+            <p class="project-title">PlotForge</p>
+            <p class="project-tags">HTML • CSS • JS</p>
+          </div>
+          <p class="project-desc">
+            Ferramenta para criar documentos de design de jogos (GDD) com auxílio de IA, organizando personagens, cenários, inimigos e sistemas em um só lugar.
+          </p>
+          <div class="project-actions">
+            <a class="btn btn-small" href="https://plot-forge-lime.vercel.app/" target="_blank" rel="noopener noreferrer">Demo</a>
+            <a class="btn btn-outline btn-small" href="https://github.com/AlexandreBrito26" target="_blank" rel="noopener noreferrer">Código</a>
+          </div>
+        </article>
+
+        <!-- Arcana: Duelo de Cristais -->
+        <article class="card project" data-tags="HTML CSS JS">
+          <div class="project-thumb">
+            <div class="project-thumb-placeholder arcana-thumb"><div class="arcana-bg"><div class="arcana-shards"></div><div class="arcana-icon">💎</div><div class="arcana-title">ARCANA</div><div class="arcana-sub">DUELO DE CRISTAIS</div></div></div>
+          </div>
+          <div class="project-top">
+            <p class="project-title">Arcana — Duelo de Cristais</p>
+            <p class="project-tags">HTML • CSS • JS</p>
+          </div>
+          <p class="project-desc">
+            Jogo de duelos mágicos com cristais, combinando estratégia e reflexos em partidas rápidas contra a IA ou outro jogador.
+          </p>
+          <div class="project-actions">
+            <a class="btn btn-small" href="https://arcana-clash-kohl.vercel.app/" target="_blank" rel="noopener noreferrer">Jogar</a>
+            <a class="btn btn-outline btn-small" href="https://github.com/AlexandreBrito26" target="_blank" rel="noopener noreferrer">Código</a>
+          </div>
+        </article>
+
+        <article class="card project ghost">
+          <p class="project-title">Próximo projeto</p>
+          <p class="project-desc">Consumindo APIs • React • Tailwind...</p>
+          <p class="hint">Assim que finalizar um novo projeto, ele entrará aqui.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="contato" class="section">
+      <div class="section-label">04 — Contato</div>
+      <h2>Vamos conversar</h2>
+
+      <div class="grid-2">
+        <div class="card">
+          <h3>Me encontre por aqui</h3>
+          <p class="muted" style="margin-bottom:16px;">Aberto a oportunidades, freelas e trocas de conhecimento.</p>
+
+          <div class="contact">
+            <div class="contact-item">
+              <span class="contact-icon">✉️</span>
+              <div>
+                <p class="contact-label">Email</p>
+                <p id="email">alexandrebritoprofissional@gmail.com</p>
+              </div>
+            </div>
+            <div class="contact-item">
+              <span class="contact-icon">💼</span>
+              <div>
+                <p class="contact-label">LinkedIn</p>
+                <a href="https://www.linkedin.com/in/alexandre-brito-b6a7071b2/" id="linkedinLink" target="_blank" rel="noopener noreferrer">alexandre-brito</a>
+              </div>
+            </div>
+            <div class="contact-item">
+              <span class="contact-icon">🐙</span>
+              <div>
+                <p class="contact-label">GitHub</p>
+                <a href="https://github.com/AlexandreBrito26" id="githubLink" target="_blank" rel="noopener noreferrer">AlexandreBrito26</a>
+              </div>
+            </div>
+          </div>
+
+          <button class="btn btn-outline btn-small" id="copyEmail" type="button" style="margin-top:16px;">
+            Copiar email
+          </button>
+
+          <p class="toast" id="toast" role="status" aria-live="polite"></p>
+        </div>
+
+        <form class="card form" id="form">
+          <h3>Mensagem rápida <span class="hint-inline">(simulação)</span></h3>
+
+          <label>
+            Seu nome
+            <input type="text" name="nome" placeholder="Ex: Maria" required />
+          </label>
+
+          <label>
+            Mensagem
+            <textarea name="msg" rows="4" placeholder="Ex: Vi seu portfólio e..." required></textarea>
+          </label>
+
+          <button class="btn" type="submit">Enviar mensagem</button>
+          <p class="hint">*Aqui é só simulação para treinar formulário.</p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>© <span id="year"></span> Alexandre Brito <span class="footer-sep">·</span> Feito com HTML/CSS/JS</p>
+    <p class="footer-sub">Minas Gerais, Brasil</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
